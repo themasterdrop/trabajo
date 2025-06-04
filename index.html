@@ -10,11 +10,15 @@
       width: 1000px;
       height: 600px;
       border: none;
-      margin-bottom: 40px;
+
+      margin: 20px auto; /* Centra horizontalmente */
+      display: block;    /* Necesario para que margin auto funcione */
+  
     }
     body {
       font-family: sans-serif;
       padding: 20px;
+      text-align: center;  
     }
   </style>
 </head>
@@ -22,17 +26,11 @@
   <h1>Visualización de Gráficos</h1>
 
    <h2>Gráfico por Edad</h2>
-    
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">    
-
    <iframe src="grafico_edad.html" width="800" height="500"></iframe>
     
- <div style="text-align: right;">  
    <h2>Análisis de citas en el hospital María Auxiliadora</h2>
    <iframe class="grafico-derecha"  src="gráfico_cita.html" width="1000" height="800" style="margin-left: 20px;"></iframe>
- </div>
-    
-</div>
+
    <h2>Gráfico por Tipo de Seguro</h2>
    <iframe src="gráfico_seguro.html" width="900" height="700"></iframe>
 
